@@ -13,22 +13,59 @@ if(!(where.exe chocolatey)){ $env:Path += ';C:\Chocolatey\bin;' }
 chocolatey install chocolatey -pre
 
 
-$chocolateyIds = '7zip
+$chocolateyIds = 'boxstarter
+7zip
+ccleaner
+ccenhancer
+javaruntime
+sysinternals
+adobereader
+filezilla
+tightvnc
+skype
+dropbox
+ScriptCs
+autohotkey_l
+ConEmu
+ChocolateyGUI
+tortoisesvn
+TortoiseGit
+launchy
+PDFCreator
+expresso
+wireshark
+winscp
+teamviewer
 notepadplusplus
 poshgit
-fiddler
+fiddler4
+imgburn
+uTorrent
+thunderbird
+audacity
+cdburnerxp
+windbg
 treesizefree
 P4Merge
 wincommandpaste
 linqpad4
 putty
 SkyDrive
+sugarsync
+openvpn
 paint.net
+Folder_Size
 git-credential-winstore
 dotpeek
 googlechrome
 WindowsLiveWriter
-boxstarter.helpers'
+vlc
+SqlServer2012Express
+GoodSync
+intellij-idea-community
+VisualStudio2013Premium
+snoop
+genymotion'
 
 $chocolateyIds > ChocolateyInstallIds.txt
 $path = get-item 'ChocolateyInstallIds.txt'
