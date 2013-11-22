@@ -53,6 +53,7 @@ putty
 SkyDrive
 sugarsync
 openvpn
+ShrewSoftVpn
 paint.net
 Folder_Size
 git-credential-winstore
