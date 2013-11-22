@@ -1,5 +1,5 @@
 # Developer machine setup - run the below oneliner (in an elevated PS profile to setup a my development environment)
-#  iex ((new-object net.webclient).DownloadString('https://raw.github.com/staxmanade/DevMachineSetup/master/Bootstrap/BootIt.ps1'))
+#  iex ((new-object net.webclient).DownloadString('https://raw.github.com/maurodx/DevMachineSetup/master/Bootstrap/BootIt.ps1'))
 #
 
 
@@ -75,8 +75,8 @@ if(!(where.exe git)){
 	}
 }
 
-git config --global user.email jason@elegantcode.com
-git config --global user.name 'Jason Jarrett'
+git config --global user.email maurodx@email.it
+git config --global user.name 'Mauro Destro'
 git config --global color.status.changed "cyan normal bold" 
 git config --global color.status.untracked "cyan normal bold"
 
@@ -91,4 +91,4 @@ if($chocolateyIds -match 'p4merge') {
 }
 
 # setup local powershell profile.
-iex ((new-object net.webclient).DownloadString('https://raw.github.com/staxmanade/DevMachineSetup/master/Bootstrap/initPsProfile.ps1'))
+iex ((new-object net.webclient).DownloadString('https://raw.github.com/maurodx/DevMachineSetup/master/Bootstrap/initPsProfile.ps1'))
