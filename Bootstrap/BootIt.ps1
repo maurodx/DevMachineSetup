@@ -73,7 +73,7 @@ $path = get-item 'ChocolateyInstallIds.txt'
 $notepad = [System.Diagnostics.Process]::Start( "notepad.exe", $path )
 $notepad.WaitForExit()
 $chocolateyIds = (cat $path | where { $_ })
-$chocolateyIds | %{ cinstm $_ }
+$chocolateyIds | %{ cinst $_ }
 
 
 
