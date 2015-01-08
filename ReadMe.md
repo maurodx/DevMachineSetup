@@ -11,7 +11,7 @@ To organize the configuration and setup of my typical development environment.
 Execute the following one-liner in an elevated powershell prompt
 
     set-executionpolicy unrestricted;
-    iex ((new-object net.webclient).DownloadString('https://raw.github.com/staxmanade/DevMachineSetup/master/Bootstrap/BootIt.ps1'))
+    iex ((new-object net.webclient).DownloadString('https://raw.github.com/maurodx/DevMachineSetup/master/Bootstrap/BootIt.ps1'))
 
 
 2. Initialize powershell profile
@@ -20,5 +20,5 @@ Execute the following one-liner in an elevated powershell prompt
  NOTE: This is already included in the #1 above
 
     set-executionpolicy unrestricted;
-    iex ((new-object net.webclient).DownloadString('https://raw.github.com/staxmanade/DevMachineSetup/master/Bootstrap/initPsProfile.ps1'))
+    iex ((new-object net.webclient).DownloadString('https://raw.github.com/maurodx/DevMachineSetup/master/Bootstrap/initPsProfile.ps1'))
 
