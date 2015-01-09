@@ -26,9 +26,7 @@ skype
 dropbox
 ScriptCs
 autohotkey_l
-ConEmu
 ChocolateyGUI
-tortoisesvn
 TortoiseGit
 launchy
 PDFCreator
@@ -40,9 +38,7 @@ notepadplusplus
 poshgit
 fiddler4
 imgburn
-uTorrent
 thunderbird
-audacity
 cdburnerxp
 windbg
 treesizefree
@@ -51,7 +47,6 @@ wincommandpaste
 linqpad4
 putty
 SkyDrive
-sugarsync
 openvpn
 ShrewSoftVpn
 paint.net
@@ -59,11 +54,10 @@ Folder_Size
 git-credential-winstore
 dotpeek
 googlechrome
-WindowsLiveWriter
 vlc
 SqlServer2012Express
 GoodSync
-intellij-idea-community
+intellijidea-community
 VisualStudio2013Premium
 snoop
 genymotion'
