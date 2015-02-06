@@ -13,54 +13,59 @@ if(!(where.exe chocolatey)){ $env:Path += ';C:\Chocolatey\bin;' }
 chocolatey install chocolatey -pre
 
 
-$chocolateyIds = 'boxstarter
-7zip
-ccleaner
-ccenhancer
-javaruntime
-sysinternals
-adobereader
-filezilla
-tightvnc
-skype
-dropbox
-ScriptCs
-autohotkey_l
-ChocolateyGUI
-TortoiseGit
-launchy
-PDFCreator
-expresso
-wireshark
-winscp
-teamviewer
-notepadplusplus
-poshgit
-fiddler4
-imgburn
-thunderbird
-cdburnerxp
-windbg
-treesizefree
-P4Merge
-wincommandpaste
-linqpad4
-putty
-SkyDrive
-openvpn
-ShrewSoftVpn
-paint.net
-Folder_Size
-git-credential-winstore
-dotpeek
-googlechrome
-vlc
-SqlServer2012Express
-GoodSync
-intellijidea-community
-VisualStudio2013Premium
-snoop
-genymotion'
+$chocolateyIds = 'boxstarter 
+7zip 
+ccleaner 
+ccenhancer 
+javaruntime 
+sysinternals 
+filezilla 
+tightvnc 
+skype 
+firefox
+git
+sourcetree
+vim
+wget
+curl
+foxitreader
+baretail
+webpi
+lastpass
+heidisql
+musicbee
+greenshot
+kitty.portable
+rainmeter
+thegiant.fonts
+librecad
+cyberduck
+partitionmasterfree
+autohotkey_l 
+ChocolateyGUI 
+TortoiseGit 
+launchy 
+PDFCreator 
+wireshark 
+winscp 
+teamviewer 
+notepadplusplus 
+poshgit 
+fiddler4 
+imgburn 
+thunderbird 
+cdburnerxp 
+treesizefree 
+wincommandpaste 
+putty 
+ShrewSoftVpn 
+paint.net 
+Folder_Size 
+git-credential-winstore 
+dotpeek 
+googlechrome 
+vlc 
+GoodSync'
 
 $chocolateyIds > ChocolateyInstallIds.txt
 $path = get-item 'ChocolateyInstallIds.txt'
@@ -69,7 +74,48 @@ $notepad.WaitForExit()
 $chocolateyIds = (cat $path | where { $_ })
 $chocolateyIds | %{ cinst $_ }
 
+#DEVELOP
+$chocolateyIds = 'atom
+ruby
+python
+nodejs
+phantomjs
+golang
+pycharm-community
+webstorm
+phpstorm
+SqlServer2014Express 
+VisualStudio2013Professional
+vs2013.4
+docker
+cameyo
+ScriptCs 
+expresso 
+windbg 
+P4Merge 
+linqpad4 
+intellijidea-community 
+snoop 
+genymotion'
+$chocolateyIds > ChocolateyInstallIds.txt
+$path = get-item 'ChocolateyInstallIds.txt'
+$notepad = [System.Diagnostics.Process]::Start( "notepad.exe", $path )
+$notepad.WaitForExit()
+$chocolateyIds = (cat $path | where { $_ })
+$chocolateyIds | %{ cinst $_ }
 
+
+#PRIVATE
+$chocolateyIds = 'calibre
+spotify
+btsync
+everything'
+$chocolateyIds > ChocolateyInstallIds.txt
+$path = get-item 'ChocolateyInstallIds.txt'
+$notepad = [System.Diagnostics.Process]::Start( "notepad.exe", $path )
+$notepad.WaitForExit()
+$chocolateyIds = (cat $path | where { $_ })
+$chocolateyIds | %{ cinst $_ }
 
 
 import-module "$env:chocolateyinstall\chocolateyInstall\helpers\chocolateyInstaller.psm1"
