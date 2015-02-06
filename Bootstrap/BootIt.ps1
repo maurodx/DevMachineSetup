@@ -72,7 +72,7 @@ $path = get-item 'ChocolateyInstallIds.txt'
 $notepad = [System.Diagnostics.Process]::Start( "notepad.exe", $path )
 $notepad.WaitForExit()
 $chocolateyIds = (cat $path | where { $_ })
-$chocolateyIds | %{ cinst $_ }
+$chocolateyIds | %{ cinst $_ -y }
 
 #DEVELOP
 $chocolateyIds = 'atom
@@ -102,7 +102,7 @@ $path = get-item 'ChocolateyInstallIds.txt'
 $notepad = [System.Diagnostics.Process]::Start( "notepad.exe", $path )
 $notepad.WaitForExit()
 $chocolateyIds = (cat $path | where { $_ })
-$chocolateyIds | %{ cinst $_ }
+$chocolateyIds | %{ cinst $_ -y }
 
 
 #PRIVATE
@@ -115,7 +115,7 @@ $path = get-item 'ChocolateyInstallIds.txt'
 $notepad = [System.Diagnostics.Process]::Start( "notepad.exe", $path )
 $notepad.WaitForExit()
 $chocolateyIds = (cat $path | where { $_ })
-$chocolateyIds | %{ cinst $_ }
+$chocolateyIds | %{ cinst $_ -y }
 
 
 import-module "$env:chocolateyinstall\chocolateyInstall\helpers\chocolateyInstaller.psm1"
