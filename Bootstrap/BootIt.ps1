@@ -38,7 +38,6 @@ greenshot
 kitty.portable
 rainmeter
 thegiant.fonts
-librecad
 cyberduck
 partitionmasterfree
 autohotkey_l 
@@ -64,8 +63,7 @@ Folder_Size
 git-credential-winstore 
 dotpeek 
 googlechrome 
-vlc 
-GoodSync'
+vlc'
 
 $chocolateyIds > ChocolateyInstallIds.txt
 $path = get-item 'ChocolateyInstallIds.txt'
@@ -75,8 +73,7 @@ $chocolateyIds = (cat $path | where { $_ })
 $chocolateyIds | %{ cinst $_ -y }
 
 #DEVELOP
-$chocolateyIds = 'atom
-ruby
+$chocolateyIds = 'ruby
 python
 nodejs
 phantomjs
@@ -88,15 +85,12 @@ SqlServer2014Express
 VisualStudio2013Professional
 vs2013.4
 docker
-cameyo
 ScriptCs 
 expresso 
-windbg 
 P4Merge 
 linqpad4 
 intellijidea-community 
-snoop 
-genymotion'
+snoop'
 $chocolateyIds > ChocolateyInstallIds.txt
 $path = get-item 'ChocolateyInstallIds.txt'
 $notepad = [System.Diagnostics.Process]::Start( "notepad.exe", $path )
