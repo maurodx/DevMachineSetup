@@ -12,6 +12,7 @@ if(!(where.exe chocolatey)){ $env:Path += ';C:\Chocolatey\bin;' }
 # get the pre released version. It haz cool features!
 chocolatey install chocolatey -pre
 
+cmd /c pause
 
 $chocolateyIds = 'boxstarter 
 7zip 
